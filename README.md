@@ -2,8 +2,6 @@
 
 <img src='https://github.com/WataruMaeda/react-native-boilerplate/blob/main/__DELELE_ME__/demo.gif' width='32%'>
 
-- [Expo link](https://expo.io/@wataru/react-native-boilerplate)
-
 ## About
 
 We spend a large amount of time to setup a project; changing file structure, installing libraries, create reusable components and so on. The purpose of using the project is to minimize the redundant effort to setup a project from scratch. In the boilerplate, it contains only commonly-used libraries and the all setup done for you.
@@ -24,6 +22,8 @@ At the default, you can see 3 types of navigation; stack, tab, and drawer. Here 
 
 If your app requires authorization, you need to implement login, signup function. After the user login or logout, the navigation flow should be different. In this case, the route should be switched by the login status. In the [navigator](https://github.com/WataruMaeda/react-native-boilerplate/blob/main/src/navigator/Navigator.js#L18), you can set the different navigation changed by login status.
 
+The auth logic are inside the src/navigator/Navigator.js
+
 #### Redux
 
 We are using [Redux Toolkit](https://redux-toolkit.js.org/) to simplify the redux setup and minimize boilerplates. 
@@ -40,39 +40,6 @@ If your project structure become complicated and has a lot of nested folders, yo
 #### Code formatting, fixing and testing on pre commit
 
 It's very important to keep code clean to maintain readability and productivity. In the boilerplate, Eslint, Prettier and Jest configuration are done. It's continuously checking and format your code while you coding (Please enable "Format on Save" option if you prefer to format code after save change). After you submit changes, pre commit script will run to handle checking and formatting your code, run test. If the 3 steps are passed, you will be able to push the change.
-
-## Libraries
-
-- [expo](https://github.com/expo/expo)
-- [react-navigation 5.x](https://github.com/react-navigation/react-navigation)
-- [redux](https://github.com/reduxjs/redux)
-- [redux-toolkit](https://redux-toolkit.js.org/)
-- [redux-logger](https://github.com/LogRocket/redux-logger)
-- [moment](https://github.com/moment/moment)
-- [axios](https://github.com/axios/axios)
-- [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons)
-- [react-native-svg](https://github.com/react-native-community/react-native-svg)
-
-## Libraries for development
-
-- [eslint](https://github.com/eslint/eslint)
-- [prettier](https://github.com/prettier/prettier)
-- [jest](https://jestjs.io/)
-- [pre commit](https://github.com/observing/pre-commit)
-
-## How to Use
-
-1. Download zip or click "Use this template"
-2. Update `app.json`
-
-```
- "name": "your-app-name",
- "slug": "your-app-name",
-```
-
-3. `yarn install` or `npm install`
-4. If you haven't setup expo, please follow the [instruction](https://expo.io/learn) to complete setup
-5. In terminal, `expo start`
 
 ## Licence
 
